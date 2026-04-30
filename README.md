@@ -113,7 +113,8 @@ The branches below have no matching entry in `dim_mall` and will retain `branch_
 | SM Center Dagupan | Not in dim_mall |
 | S'Maison | Specialty mall; not in dim_mall |
 | The Podium | Specialty mall; not in dim_mall |
-| CHAIN PROMO | Chain-wide promo — not a branch; flagged via `is_chain_promo = True` |
+| MOA Square | Specialty mall; not in dim_mall |
+| CHAIN PROMO | Chain-wide promo — not a branch |
 
 The following entries are mapped but **require business confirmation** before use in production:
 
