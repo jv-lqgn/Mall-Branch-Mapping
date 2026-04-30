@@ -138,12 +138,3 @@ When a new sale schedule introduces an unrecognized branch name:
 4. If no `dim_mall` entry exists, set the value to `None` — the row will retain `branch_id = NaN`
 5. Re-run Steps 5–8 to apply the new mapping
 
----
-
-## 📄 Documentation
-
-Full user guide: [`Mall_Branch_Mapping_User_Guide.docx`](documents/Mall_Branch_Mapping_User_Guide.docx)
-
----
-
-*Digital Advantage Corporation – Analytics and Insights*
