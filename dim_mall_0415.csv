@@ -1,0 +1,81 @@
+branch_id,branch_name,mall_type,longitude,latitude,address,barangay_code,barangay_name,city_code,city_name,province_code,province_name,region_code,region_name,population,opening_date,age_in_months
+5864,SM Store Laoag,supermall,120.5810452,18.1923054,sm city laoag airport road brgy b nangalisan west city of laoag ilocos norte ,40,"Bgy. No. 51-B, Nangalisan West",12,City of Laoag ,28,Ilocos Norte,1,Region I (Ilocos Region),112117,2025-05-01,8
+5896,SM Store La Union,supermall,120.3219652,16.6253362,sm city la union along diversion road biday city of san fernando la union ,12,Biday,14,City of San Fernando ,33,La Union,1,Region I (Ilocos Region),124809,2025-10-01,3
+6127,SM Store Urdaneta,supermall,120.571866,15.9709581,brgy nancayasan urdaneta city pangasinan,27,Nancayasan,46,City of Urdaneta,55,Pangasinan,1,Region I (Ilocos Region),145935,2018-05-01,94
+457,SM Store Rosales,supermall,120.6025095,15.8793528,brgy carmen east road rosales pangasinan,9,Carmen East,31,Rosales,55,Pangasinan,1,Region I (Ilocos Region),67510,2009-05-01,200
+6128,SM Store Tuguegarao,supermall,121.7188758,17.6281688,bagay rd caritan norte tugeugarao city cagayan,3,Bagay,29,Tuguegarao City ,15,Cagayan,2,Region II (Cagayan Valley),167297,2022-11-01,38
+6117,SM Store Cauayan,supermall,121.7676016,16.9370634,maharlika hway cor rivera street cauayan city isabela,32,District II,8,City of Cauayan,31,Isabela,2,Region II (Cagayan Valley),143539,2014-05-01,140
+6122,SM Store Bataan,supermall,120.5375263,14.6825673,lerma st ibayo city of balanga bataan,11,Ibayo,3,City of Balanga ,8,Bataan,3,Region III (Central Luzon),109931,2023-05-01,32
+1896,SM Store San Jose Del Monte,supermall,121.0752261,14.7865329,brgy tungkong mangga san jose del monte bulacan,11,Tungkong Mangga,20,City of San Jose Del Monte,14,Bulacan,3,Region III (Central Luzon),685688,2016-04-01,117
+445,SM Store Baliwag,supermall,120.890874,14.961085,dona remedios trinidad hway brgy pagala baliwag bulacan,10,Pagala,3,City of Baliwag,14,Bulacan,3,Region III (Central Luzon),174194,2008-12-01,205
+134,SM Store Marilao,supermall,120.9564395,14.7544615,mcarthur highway barangay ibayo marilao bulacan,3,Ibayo,11,Marilao,14,Bulacan,3,Region III (Central Luzon),263507,2003-11-01,266
+6895,SM Store Megacenter,supermall,120.967884,15.487678,general tiniomelencio st cabanatuan city nueva ecija,33,Dionisio S. Garcia,3,City of Cabanatuan,49,Nueva Ecija,3,Region III (Central Luzon),343672,2014-11-01,134
+6894,SM Store Cabanatuan,supermall,120.9546825,15.4667833,maharlika hway brgy h concepcion cabanatuan city,51,Lapu-lapu Pob.,3,City of Cabanatuan,49,Nueva Ecija,3,Region III (Central Luzon),343672,2015-10-01,123
+94,SM Store Pampanga,supermall,120.7015446,15.052439,brgy lagundi mexico pampanga,13,Lagundi,13,Mexico,54,Pampanga,3,Region III (Central Luzon),187597,2000-11-01,302
+238,SM Store Clark,supermall,120.5814247,15.1688749,m a roxas highway clark field pampanga,17,Pampang,1,City of Angeles,54,Pampanga,3,Region III (Central Luzon),483452,2006-05-01,236
+6900,SM Store San Fernando,supermall,120.692432,15.027686,v tiomico st brgy rosario san fernando pampanga,21,Santo Rosario,16,City of San Fernando,54,Pampanga,3,Region III (Central Luzon),377534,2012-07-01,162
+2553,SM Store Telabastagan,supermall,120.6038546,15.1197783,mc arthur hway brgy telabastagan pampanga,37,Telabastagan,16,City of San Fernando,54,Pampanga,3,Region III (Central Luzon),377534,2018-05-01,92
+274,SM Store Tarlac,supermall,120.5942523,15.4773964,mc arthur brgy san roque tarlac city,73,San Roque,16,City of Tarlac ,69,Tarlac,3,Region III (Central Luzon),401892,2010-04-01,189
+3066,SM Store Olongapo Central,supermall,120.2831376,14.836361,rizal ave barangay east tapinac olongapo city,6,East Tapinac,7,City of Olongapo,71,Zambales,3,Region III (Central Luzon),264903,2019-09-01,76
+353,SM Store Olongapo,supermall,120.2830195,14.8264719,magsaysay drive cr gordon ave pagasa olongapo city,17,Pag-asa,7,City of Olongapo,71,Zambales,3,Region III (Central Luzon),264903,2012-02-01,167
+5039,SM Store Sto Tomas,supermall,121.1508523,14.1062271,maharlika highway san bartolome sto tomas batangas,7,San Bartolome,28,City of Sto. Tomas,10,Batangas,4,Region IV-A (CALABARZON),226772,2023-10-01,27
+270,SM Store Lipa,supermall,121.1631087,13.9548638,ayala highway brgy marauoy lipa city,30,Marauoy,14,City of Lipa,10,Batangas,4,Region IV-A (CALABARZON),387392,2006-09-01,232
+148,SM Store Batangas,supermall,121.0688303,13.7559868,brgy pallocan west batangas city,51,Pallocan Kanluran,5,Batangas City ,10,Batangas,4,Region IV-A (CALABARZON),358267,2004-11-01,254
+145,SM Store Dasmarinas,supermall,120.9567484,14.3012427,governors drive brgy sampalok dasmarinas cavite,63,Sampalok IV,6,City of Dasmariñas,21,Cavite,4,Region IV-A (CALABARZON),744511,2004-05-01,260
+1887,SM Store Molino,supermall,120.9776836,14.3839988,brgy molino iv bacoor cavite,47,Molino IV,3,City of Bacoor,21,Cavite,4,Region IV-A (CALABARZON),661381,2016-10-01,111
+5302,SM Store Bacoor,supermall,120.9506479,14.4442365,aguinaldo highway bacoor cavite city,8,Habay I,3,City of Bacoor,21,Cavite,4,Region IV-A (CALABARZON),661381,1997-07-01,342
+432,SM Store Rosario,supermall,120.857194,14.409134,gen trias drive rosario cavite,29,Tejero,17,Rosario,21,Cavite,4,Region IV-A (CALABARZON),112572,2009-11-01,194
+6129,SM Store Tanza,supermall,120.8513287,14.3927416,daang amaya ii tanza cavite,28,Amaya II,20,Tanza,21,Cavite,4,Region IV-A (CALABARZON),339308,2022-10-01,39
+1888,SM Store Trece Martires,supermall,120.866172,14.2821017,governors drive brgy san agustin trece martires city,6,San Agustin ,22,City of Trece Martires ,21,Cavite,4,Region IV-A (CALABARZON),227892,2016-05-01,116
+6116,SM Store Calamba,supermall,121.1557047,14.2030727,national road brgy real calamba city laguna,49,Real,5,City of Calamba,34,Laguna,4,Region IV-A (CALABARZON),575046,2010-10-01,183
+5314,SM Store San Pablo,supermall,121.302313,14.0707197,nat hiway brgy san rafael san pablo city laguna ,63,San Rafael,24,City of San Pablo,34,Laguna,4,Region IV-A (CALABARZON),300166,2010-09-01,184
+5300,SM Store Sta Rosa,supermall,121.0985754,14.3129926,national road bario tagapo sta rosa laguna,23,Tagapo,28,City of Santa Rosa,34,Laguna,4,Region IV-A (CALABARZON),430920,2006-02-01,239
+,SM Yulo,supermall,121.0495627,14.2270302,,,,28,City of Santa Rosa,34,Laguna,4,Region IV-A (CALABARZON),430920,,
+6114,SM Store Lucena,supermall,121.6250014,13.9413071,dalahican rd cor maharlika hway brgy ibabang lucena city,18,Dalahican,0,City of Lucena ,56,Quezon,4,Region IV-A (CALABARZON),280331,2003-10-01,269
+1268,SM Store San Mateo,supermall,121.1140199,14.6796013,general a luna ave brgy ampid i san mateo rizal ,1,Ampid I,11,San Mateo,58,Rizal,4,Region IV-A (CALABARZON),276449,2015-05-01,128
+855,SM Store Masinag,supermall,121.120385,14.625217,marcos highway brgy mayamot antipolo city,4,Mayamot,2,City of Antipolo ,58,Rizal,4,Region IV-A (CALABARZON),913712,2011-05-01,176
+276,SM Store Taytay,supermall,121.1400541,14.5651357,manila east road barangay dolores taytay rizal,1,Dolores ,13,Taytay,58,Rizal,4,Region IV-A (CALABARZON),397111,2007-11-01,218
+6123,SM Store Legazpi,supermall,123.7447965,13.1445449,imelda roces ave brgy  bitano legazpi city albay,35,Bgy. 37 - Bitano,6,City of Legazpi ,5,Albay,5,Region V (Bicol Region),210616,2018-09-01,88
+6126,SM Store Daet,supermall,122.9454365,14.1211324,vinzon ave lagon daet camarines camarines norte,15,Lag-On,3,Daet ,16,Camarines Norte,5,Region V (Bicol Region),106465,2021-10-01,51
+5311,SM Store Naga,supermall,123.1903845,13.621547,central business district ii triangulo naga city,32,Triangulo,24,City of Naga,17,Camarines Sur,5,Region V (Bicol Region),210545,2009-04-01,201
+6120,SM Store Sorsogon,supermall,124.0197927,12.9756099,maharlika highway balogo sorsogon city,3,Balogo,16,City of Sorsogon ,62,Sorsogon,5,Region V (Bicol Region),187670,2022-10-01,39
+6121,SM Store Roxas City,supermall,122.7474191,11.595431,arnaldo blvd brgy baybay roxas city capiz,19,Baybay,14,City of Roxas ,19,Capiz,6,Region VI (Western Visayas),185236,2022-04-01,45
+6896,SM Store Iloilo,supermall,122.5516094,10.714641,benigno aquino avenue mandurriao city iloilo,160,San Rafael,22,City of Iloilo ,30,Iloilo,6,Region VI (Western Visayas),473728,1999-06-01,319
+6892,SM Store Delgado,supermall,122.5673198,10.6985776,delgado st cor valeria st delgado city,75,Delgado-Jalandoni-Bagumbayan,22,City of Iloilo ,30,Iloilo,6,Region VI (Western Visayas),473728,1979-05-01,560
+5504,SM Store J Mall,supermall,123.933659,10.335143,sm city j mall as fortuna cor albano st bakilid  mandaue city cebu,2,Bakilid,30,City of Mandaue,22,Cebu,7,Region VII (Central Visayas),364482,2024-10-01,15
+4535,SM Store Seaside Cebu,supermall,123.880326,10.282017,south road properties brgy mambaling cebu city,49,Mambaling,17,City of Cebu ,22,Cebu,7,Region VII (Central Visayas),965332,2015-11-01,122
+32,SM Store Cebu,supermall,123.9183318,10.3117152,cebu port center north reclamation area cebu city,46,Mabolo,17,City of Cebu ,22,Cebu,7,Region VII (Central Visayas),965332,1993-11-01,386
+4534,SM Store Consolacion,supermall,123.9648024,10.3804371,brgy lamac consolacion cebu city,7,Lamac,19,Consolacion,22,Cebu,7,Region VII (Central Visayas),153931,2012-05-01,164
+3067,SM Store Mindpro Zamboanga,supermall,122.0761457,6.9078534,sm mindpro citimall la purisima brgy zone ii zamboanga city zamboanga del sur,62,Barangay Zone II,0,City of Zamboanga,73,Zamboanga del Sur,9,Region IX (Zamboanga Peninsula),1018849,2020-11-01,62
+6574,SM Store Zamboanga,supermall,122.0766704,6.9175702,,99,Camino Nuevo,0,City of Zamboanga,73,Zamboanga del Sur,9,Region IX (Zamboanga Peninsula),1018849,,
+6118,SM Store CDO Downtown,supermall,124.6538723,8.4843017,cm recto ave cor osmena st brgy  cagayan de oro city,20,Barangay 24,0,City of Cagayan De Oro ,43,Misamis Oriental,10,Region X (Northern Mindanao),741617,2017-05-01,104
+120,SM Store Cagayan De Oro,supermall,124.623743,8.455447,brgy upper carmen cdo city misamis oriental,44,Carmen,0,City of Cagayan De Oro ,43,Misamis Oriental,10,Region X (Northern Mindanao),741617,2002-11-01,278
+95,SM Store Davao,supermall,125.587869,7.05006,quimpo blvd ecoland subd brgy matina davao city,75,Matina Crossing,0,City of Davao,24,Davao del Sur,11,Region XI (Davao Region),1848947,2001-11-01,290
+4536,SM Store Lanang,supermall,125.6308957,7.0987866,brgy san antonio agdao district davao city davao del sur ,2,Agdao,0,City of Davao,24,Davao del Sur,11,Region XI (Davao Region),1848947,2012-09-01,160
+4537,SM Store General Santos,supermall,125.1815259,6.1160422,cr santiago blvd  san miguel st lagao general santos city,11,Lagao,0,City of General Santos,63,South Cotabato,12,Region XII (SOCCSKSARGEN),722059,2012-08-01,161
+2,SM Store Quiapo,supermall,120.98192,14.598557,mdci bldg c palanca st quiapo manila,,,3,Quiapo,39,Metro Manila,13,National Capital Region (NCR),1902590,1972-11-01,638
+6891,SM Store Manila,supermall,120.9831071,14.5896925,concepcion cor arroceros and san marcelino st manila city,2,Barangay 659-A,8,Ermita,39,Metro Manila,13,National Capital Region (NCR),1902590,2000-04-01,309
+6898,SM Store San Lazaro,supermall,120.985854,14.618401,felix huertas cor ah lacson streets sta cruz manila,52,Barangay 350,5,Santa Cruz,39,Metro Manila,13,National Capital Region (NCR),1902590,2005-07-01,246
+6899,SM Store Marikina,supermall,121.0843246,14.6264423,marcos highway kalumpang marikina city,2,Calumpang,2,City of Marikina,74,Metro Manila,13,National Capital Region (NCR),471323,2008-09-01,210
+6113,SM Store Fairview,supermall,121.059445,14.734229,quirino hway cor regalado ave p putik novaliches qc,79,Pasong Putik Proper,4,Quezon City,74,Metro Manila,13,National Capital Region (NCR),3084270,1997-10-01,339
+1,SM Store Cubao,non-supermall,121.0553283,14.61907327,araneta center cubao quezon city,115,Socorro,4,Quezon City,74,Metro Manila,13,National Capital Region (NCR),3084270,1980-10-01,543
+448,SM Store Novaliches,supermall,121.0375839,14.7080424,quirino highwaybrgy san bartolome novaliches qc,97,San Bartolome,4,Quezon City,74,Metro Manila,13,National Capital Region (NCR),3084270,2010-11-01,182
+1875,SM Store East Ortigas,supermall,121.1046248,14.5869362,ortigas avenue extension sta lucia pasig city,30,Santa Lucia,3,City of Pasig,74,Metro Manila,13,National Capital Region (NCR),853050,2016-12-01,111
+9,SM Store Megamall,supermall,121.0572393,14.5844877,julia vargas cr edsa wack wack village mandaluyong city,27,Wack-wack Greenhills,1,City of Mandaluyong,74,Metro Manila,13,National Capital Region (NCR),465902,1991-06-01,415
+6,SM Store North Edsa,supermall,121.030573,14.656991,edsa cor north avenue quezon city,9,Bagong Pag-asa,4,Quezon City,74,Metro Manila,13,National Capital Region (NCR),3084270,1985-11-01,482
+6130,SM Store Estancia,non-supermall,121.0639569,14.5770872,capitol commons brgy oranbo pasig city,13,Oranbo,3,City of Pasig,74,Metro Manila,13,National Capital Region (NCR),853050,2019-11-01,74
+5,SM Store Sta. Mesa,supermall,121.018829,14.60454817,ramon magsaysay boulevard cr g araneta ave qc,31,Doña Imelda,4,Quezon City,74,Metro Manila,13,National Capital Region (NCR),3084270,1990-09-01,424
+5192,SM Store Caloocan,supermall,121.0201189,14.7517097,deparo road brgy  zone  district  bagumbong caloocan,171,Barangay 171,1,City of Caloocan,75,Metro Manila,13,National Capital Region (NCR),1712945,2024-04-01,21
+6124,SM Store Valenzuela,supermall,120.976993,14.6856581,mcarthur highway brgy karuhatan valenzuela city,8,Karuhatan,4,City of Valenzuela,75,Metro Manila,13,National Capital Region (NCR),725173,2018-10-01,87
+6119,SM Store Grand Central,supermall,120.9846961,14.6552104,brgy  district ii grace park east caloocan city,88,Barangay 88,1,City of Caloocan,75,Metro Manila,13,National Capital Region (NCR),1712945,2021-11-01,50
+3,SM Store Makati,non-supermall,121.026778,14.5495547,makati commercial center makati metro manila,25,San Lorenzo,2,City of Makati,76,Metro Manila,13,National Capital Region (NCR),309770,1975-09-01,604
+1132,SM Store Aura,supermall,121.053994,14.546256,th st cor mc kinley parkway brgy fort  bgc taguig ,20,Fort Bonifacio,7,City of Taguig,76,Metro Manila,13,National Capital Region (NCR),1308085,2013-05-01,152
+245,SM Store Mall Of Asia,supermall,120.9821105,14.5352312,jw diokno boulevard moa complexcbp  pasay city,76,Barangay 76,5,Pasay City,76,Metro Manila,13,National Capital Region (NCR),453186,2006-05-01,236
+6897,SM Store Bicutan,supermall,121.043361,14.486973,dona soledad ave brgy don bosco paranaque city,8,Don Bosco,4,City of Parañaque,76,Metro Manila,13,National Capital Region (NCR),703245,2002-11-01,278
+73,SM Store Southmall,supermall,121.0106569,14.4327658,alabang zapote rd real st almanza uno las pinas city,1,Almanza Uno,1,City of Las Piñas,76,Metro Manila,13,National Capital Region (NCR),615549,1995-04-01,371
+1204,SM Store BF Paranaque,supermall,121.0320318,14.4580162,dr a santos ave cor presidents bf paranaque city,7,B.F. Homes,4,City of Parañaque,76,Metro Manila,13,National Capital Region (NCR),703245,2013-11-01,146
+6115,SM Store Sucat,supermall,120.9932276,14.4830077,doctor a santos ave brgy san dionisio paranaque city,4,San Dionisio,4,City of Parañaque,76,Metro Manila,13,National Capital Region (NCR),703245,2005-11-01,242
+5305,SM Store Baguio,supermall,120.5992,16.408723,luneta hill upper session road baguio city,68,Bal-Marcoville,0,City of Baguio,11,Benguet,14,Cordillera Administrative Region (CAR),368426,2003-11-01,266
+6125,SM Store Butuan,supermall,125.53376,8.94574,jose c aquino ave brgy bayanihan butuan city,14,Bayanihan Pob.,2,City of Butuan ,2,Agusan del Norte,16,Region XIII (Caraga),385530,2020-11-01,62
+2267,SM Store Puerto Princesa,supermall,118.7394398,9.7433529,malvar corner lacao streets barangay san miguel puerto princesa city palawan,47,San Miguel,16,City of Puerto Princesa ,53,Palawan,17,MIMAROPA Region,316384,2017-09-01,100
+5308,SM Store Bacolod,supermall,122.9432694,10.6699429,brgy  poblacion reclamation area bacolod city,7,Barangay 12 ,1,City of Bacolod ,45,Negros Occidental,18,Negros Island Region (NIR),624787,2007-03-01,228
