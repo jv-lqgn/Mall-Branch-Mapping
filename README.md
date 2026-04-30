@@ -1,97 +1,148 @@
-# Philippine Address Matching Pipeline
+# 🏬 Mall Branch Mapping
 
-Batch pipeline for matching Philippine addresses into standardized barangay, city, province, and region using hierarchical fuzzy matching.
+> Pipeline to map SM Store branch names from the 3-Day Sale Schedule to their corresponding `branch_id` in the `dim_mall` dimension table.
 
-## Prerequisites
+---
 
-- Python 3.11 or newer
-- Git
-- uv
+## 📌 Overview
 
-Install `uv` if needed:
+The **Mall Branch Mapping** pipeline resolves inconsistent branch naming conventions across two datasets:
 
-```powershell
-pip install uv
+- **3-Day Sale Schedule** (`YEAR_2026_3-Day_Sale_Schedule.xlsx`) — contains branch names as entered by the business team (e.g., `"North EDSA"`, `"CDO Uptown"`, `"Center - Imus"`)
+- **dim_mall** (`dim_mall_0415.csv`) — the master mall dimension table with canonical `branch_name` and `branch_id` (e.g., `"SM Store North Edsa"`)
+
+The pipeline standardizes naming, applies a curated manual mapping dictionary, and outputs an enriched CSV with `branch_id` resolved for downstream analytics.
+
+---
+
+## 📁 Repository Structure
+
+```
+Mall-Branch-Mapping/
+├── brand_to_mall_mapping.ipynb     # Main pipeline notebook
+├── dim_mall_0415.csv               # Master mall dimension table (80 branches)
+├── YEAR_2026_3-Day_Sale_Schedule.xlsx  # Input: 2026 3-Day Sale Schedule
+├── 3ds_schedule_mapped.csv         # Output: enriched schedule with branch_id
+└── README.md
 ```
 
-## Installation
+---
 
-1. Clone the repository:
+## ⚙️ Pipeline Steps
 
-```powershell
-git clone https://github.com/hirajya/de_work---ms.git
-cd de_work---ms
+| Step | Description |
+|------|-------------|
+| 1 | Load `dim_mall` CSV and sale schedule XLSX into pandas DataFrames |
+| 2 | Normalize branch names — strip `"SM Store "` prefix and whitespace |
+| 3 | First-pass merge on cleaned branch name |
+| 4 | Identify unmatched rows (`branch_id = NaN`) |
+| 5 | Apply `MANUAL_MAP` dictionary for alias names, casing, and SM Center variants |
+| 6 | Re-merge using mapped names to resolve remaining `branch_id`s |
+| 7 | Validate match rate and flag unresolvable rows |
+| 8 | Export final output to `3ds_schedule_mapped.csv` |
+
+---
+
+## 📊 Output Schema
+
+| Column | Type | Description |
+|--------|------|-------------|
+| `branch_id` | Integer | Resolved branch ID from `dim_mall`. Null if unmatched. |
+| `branch_name` | String | Full SM Store branch name from `dim_mall` |
+| `branch_name_mapped` | String | Normalized name used for the join |
+| `year` | Integer | Sale year |
+| `period` | String | Half-year period: `H1` or `H2` |
+| `sale_date` | Date | Individual sale day date |
+| `access_type` | String | `early access` or `regular` |
+| `sale_duration` | String | Duration code: `3ds`, `4ds`, or `5ds` |
+
+---
+
+## 📈 Match Rate (2026)
+
+| Metric | Count | % |
+|--------|-------|---|
+| Total rows | 754 | — |
+| Matched (`branch_id` resolved) | 638 | 84.6% |
+| Unmatched (`branch_id = NaN`) | 116 | 15.4% |
+
+Unmatched rows correspond to **SM Center branches** not yet in `dim_mall`, **chain-wide promos** (`CHAIN PROMO`), and **specialty malls** (The Podium, S'Maison). These are expected and documented in the notebook appendix.
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository
+2. Place the latest `dim_mall` CSV and sale schedule XLSX in the repo root (or update the path variables in Step 1 of the notebook)
+3. Open `brand_to_mall_mapping.ipynb` in Jupyter or Databricks
+4. Run all cells sequentially
+5. Review the Step 7 validation output and check the match rate
+6. The output CSV will be written to the path defined in `OUTPUT_PATH`
+
+### Requirements
+
+```
+pandas
+openpyxl
 ```
 
-2. Sync dependencies:
+Install with:
 
-```powershell
-uv sync
+```bash
+pip install pandas openpyxl
 ```
 
-3. Activate the virtual environment:
+---
 
-```powershell
-.venv\Scripts\Activate.ps1
-```
+## ⚠️ Known Unresolved Branches
 
-## Run
+The branches below have no matching entry in `dim_mall` and will retain `branch_id = NaN` in the output. Coordinate with the data team to add them to the dimension table or confirm exclusion.
 
-### Notebook workflow (recommended)
+| Sale Schedule Name | Notes |
+|--------------------|-------|
+| Center - Angono | SM Center variant; not in dim_mall |
+| Center - Lemery | SM Center variant; not in dim_mall |
+| Center - Muntinlupa | SM Center variant; not in dim_mall |
+| Center - Ormoc | SM Center variant; not in dim_mall |
+| Center - Pulilan / SM Center Pulilan | Duplicate naming; not in dim_mall |
+| Center - Sagandaan / SM Center Sangandaan | Duplicate naming; not in dim_mall |
+| Center - Tuguegarao Downtown / SM Center Tuguegarao Downtown | Duplicate naming; not in dim_mall |
+| Center Shaw / SM Center Shaw | Duplicate naming; not in dim_mall |
+| Center – Las Piñas / SM Center Las Piñas | Duplicate naming; not in dim_mall |
+| Center – San Pedro / SM Center San Pedro | Duplicate naming; not in dim_mall |
+| SM Center Dagupan | Not in dim_mall |
+| S'Maison | Specialty mall; not in dim_mall |
+| The Podium | Specialty mall; not in dim_mall |
+| CHAIN PROMO | Chain-wide promo — not a branch; flagged via `is_chain_promo = True` |
 
-1. Open the notebook:
+The following entries are mapped but **require business confirmation** before use in production:
 
-- `address_unmatched/notebooks/optimized_address_pipeline.ipynb`
+| Sale Schedule Name | Mapped To | Confidence |
+|--------------------|-----------|------------|
+| Center - Imus / SM Center Imus | Bacoor | Medium — verify location |
+| Center - Pasig / SM Center Pasig | East Ortigas | Medium — verify location |
 
-2. Ensure the selected kernel uses `.venv`.
-3. Run cells from top to bottom.
+---
 
-### Script workflow (optional)
+## 📝 How to Add a New Branch Mapping
 
-```powershell
-python main.py
-```
+When a new sale schedule introduces an unrecognized branch name:
 
-## Inputs
+1. Identify the unmatched name in the Step 4 notebook output
+2. Find the correct `dim_mall` entry by checking `branch_name_clean` (after stripping `"SM Store "`)
+3. Add the entry to `MANUAL_MAP` in Step 5:
+   ```python
+   'Sale Schedule Name': 'dim_mall Clean Name'
+   ```
+4. If no `dim_mall` entry exists, set the value to `None` — the row will retain `branch_id = NaN`
+5. Re-run Steps 5–8 to apply the new mapping
 
-Common input files used by the pipeline:
+---
 
-- Alias rules: `address_unmatched/data/utils/ph_address_alias_extended_v3.csv`
-- Location mapping: `address_unmatched/data/mapping/dim_location_20260316_v2.csv`
-- Batch inputs: configured in notebook Cell 2 (`input_paths`)
+## 📄 Documentation
 
-## Outputs
+Full user guide: [`Mall_Branch_Mapping_User_Guide.docx`](documents/Mall_Branch_Mapping_User_Guide.docx)
 
-Generated outputs are written under:
+---
 
-- `address_unmatched/data/output/matched`
-- `address_unmatched/data/output/unmatched`
-
-Reason-based subfolders include (depending on run):
-
-- `hierarchical_match`
-- `province_barangay_inferred_city`
-- `no_location_detected`
-- `city_barangay_not_connected`
-- `ambiguous_city_for_barangay`
-
-## Helpful Commands
-
-```powershell
-# re-sync dependencies
-uv sync
-
-# run utility scripts
-python address_unmatched/scripts/combine_hierarchical_match.py
-python address_unmatched/scripts/xlsx_slicer.py
-```
-
-## Scripts
-address_unmatched/scripts/
-
-combine_hierarchical_match.py is concatenation of all files under address_unmatched/data/output/matched/hierarchical_match 
-~ our most refined data 
-
-xlsx_slicer.py chops the given file to many batches 1k rows, for sample testing
-usage: python xlsx_slicer.py "{file_name}"
-output is generated to address_unmatched/data/sample/
+*Digital Advantage Corporation – Analytics and Insights*
